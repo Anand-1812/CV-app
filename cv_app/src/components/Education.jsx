@@ -26,6 +26,7 @@ function Education() {
   return (
     <>
       <div className="education">
+        <h2>Education Detials</h2>
         <div className="year">
           <label>
             Year: <input value={year} onChange={handleYear} placeholder="2xxx-xx (format)" />

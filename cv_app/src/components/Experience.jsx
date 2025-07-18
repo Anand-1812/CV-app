@@ -25,6 +25,7 @@ function Experience() {
   return (
     <>
       <div className="experience">
+        <h2>Experience</h2>
         <div className="year">
           <label>
             Year: <input value={year} onChange={handleYear} placeholder="2xxx-xx (format)" />

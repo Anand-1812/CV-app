@@ -25,6 +25,7 @@ function Name() {
   return (
     <>
       <div className="nameSection">
+        <h2>Personal Section</h2>
         <div className="personalInfo">
           <label>
             First Name: <input value={firstName} onChange={handleFirstName} placeholder="first name" />
