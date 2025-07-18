@@ -1,4 +1,32 @@
 #root {
+  margin: 0 auto;
+  padding: 20px;
   min-width: 100vw;
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cv-section {
+  flex-grow: 1;
+}
+
+.detailsButton {
+  padding: 1.2rem;
+  display: flex;
+  gap: 14px;
+}
+
+.detailsButton button {
+  background-color: #393939;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.detailsButton button:hover {
+  background-color: #7b7b7b;
 }
