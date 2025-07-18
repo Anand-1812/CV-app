@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>CV App</h1>
+        <h1>CV GENRATOR</h1>
         <p>Enter you details below👇</p>
       </div>
     </>
