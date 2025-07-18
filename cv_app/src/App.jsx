@@ -1,10 +1,12 @@
 import './App.css'
-import Sidebar from './components/sidebar.jsx' 
+import Sidebar from './components/sidebar.jsx'
+import CvSection from './components/CvSection.jsx'
 
 function App() {
   return (
     <>
-     <Sidebar /> 
+      <Sidebar />
+      <CvSection />
     </>
   )
 }
