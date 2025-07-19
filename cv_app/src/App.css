@@ -62,15 +62,10 @@
   box-sizing: border-box;
 }
 
-.personalInfo,
-.education {
+.inputBlock {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  border: 2px solid #bdbdbd;
-  border-radius: 10px;
-  box-sizing: border-box;
+  gap: 12px;
 }
 
 h2 {
