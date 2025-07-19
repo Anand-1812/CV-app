@@ -5,7 +5,8 @@ function Buttons() {
         <button>personal</button>
         <button>Education</button>
         <button>Experience</button>
-      </div>
+        <button>Skills</button>
+     </div>
     </>
   );
 }
