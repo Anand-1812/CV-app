@@ -25,35 +25,33 @@ function Education({ isActive }) {
 
   return (
     <>
-      {isActive && (
-        <div className="education inputSection">
-          <h2>Education Detials</h2>
-          <div className="year">
+        <div className="inputSection education">
+          <div><h2>Education Detials</h2></div>
+          <div className="education">
             <label>
               Year: <input value={year} onChange={handleYear} placeholder="2xxx-xx (format)" />
             </label>
           </div>
 
-          <div className="university">
+          <div className="education">
             <label>
               Unversity/College: <input value={universityName} onChange={handleUniversityName} placeholder="university name" />
             </label>
           </div>
 
-          <div className="degree">
+          <div className="education">
             <label>
               Degree: <input value={major} onChange={handleDegree} placeholder="degree/major" />
             </label>
           </div>
 
-          <div className="location">
+          <div className="education">
             <label>
               Location: <input value={location} onChange={handleLocation} placeholder="location" />
             </label>
           </div>
 
         </div>
-      )}
     </>
   );
 }

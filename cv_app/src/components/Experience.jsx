@@ -23,7 +23,7 @@ function Experience({isActive}) {
   }
 
   return (
-    <> { isActive && (
+    <>       
       <div className="experience inputSection">
         <h2>Experience</h2>
         <div className="year">
@@ -51,7 +51,6 @@ function Experience({isActive}) {
         </div>
 
       </div>
-      )}
     </>
   );
 }

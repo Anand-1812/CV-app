@@ -24,29 +24,27 @@ function Name({ isActive }) {
 
   return (
     <>
-      {isActive && (
-        <div className="nameSection inputSection">
-          <h2>Personal Section</h2>
-          <div className="personalInfo">
-            <label>
-              First Name: <input value={firstName} onChange={handleFirstName} placeholder="first name" />
-            </label>
-            <label>
-              Last Name: <input value={lastName} onChange={handleLastName} placeholder="last name" />
-            </label>
-          </div>
-          <div className="personalInfo">
-            <label>
-              Email: <input value={email} onChange={handleEmail} placeholder="email" />
-            </label>
-          </div>
-          <div className="personalInfo">
-            <label>
-              Phone No: <input value={phone} onChange={handlePhone} placeholder="phone number" />
-            </label>
-          </div>
+      <div className="nameSection inputSection">
+        <div><h2>Personal Details</h2></div>
+        <div className="personalInfo">
+          <label>
+            First Name: <input value={firstName} onChange={handleFirstName} placeholder="first name" />
+          </label>
+          <label>
+            Last Name: <input value={lastName} onChange={handleLastName} placeholder="last name" />
+          </label>
         </div>
-      )}
+        <div className="personalInfo">
+          <label>
+            Email: <input value={email} onChange={handleEmail} placeholder="email" />
+          </label>
+        </div>
+        <div className="personalInfo">
+          <label>
+            Phone No: <input value={phone} onChange={handlePhone} placeholder="phone number" />
+          </label>
+        </div>
+      </div>
     </>
   );
 }

@@ -10,16 +10,19 @@
   max-width: 420px;
   width: 100%;
   border-right: 2px solid #bdbdbd;
+  box-sizing: border-box;
 }
 
 .aside p {
+  text-align: center;
   font-size: 1.8rem;
   padding: 0 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .cv-section {
   flex-grow: 1;
+  box-sizing: border-box;
 }
 
 .detailsButton {
@@ -29,16 +32,18 @@
   gap: 8px;
   border-top: 2px solid #bdbdbd;
   border-bottom: 2px solid #bdbdbd;
+  box-sizing: border-box;
 }
 
 .detailsButton button {
   flex: 0.5 0.5 calc(33.33% - 8px);
   background-color: #393939;
+  color: white;
   padding: 0.6rem 0.9rem;
   font-size: 1.3rem;
   border: none;
   border-radius: 20px;
-  transition: 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -49,12 +54,43 @@
 
 .inputSection {
   padding: 1.2rem;
-  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.6rem;
+  box-sizing: border-box;
 }
 
-.personalInfo {
+.personalInfo,
+.education {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0 1.4rem;
+  text-align: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in;
+  box-sizing: border-box;
+}
+
+input:hover {
+  border-color: #919191;
 }
