@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Experience() {
+function Experience({isActive}) {
   const [year, setYear] = useState("");
   const [company, setCompanyName] = useState("");
   const [jobTitle, setJobTitle] = useState("");
@@ -23,8 +23,8 @@ function Experience() {
   }
 
   return (
-    <>
-      <div className="experience">
+    <> { isActive && (
+      <div className="experience inputSection">
         <h2>Experience</h2>
         <div className="year">
           <label>
@@ -51,6 +51,7 @@ function Experience() {
         </div>
 
       </div>
+      )}
     </>
   );
 }

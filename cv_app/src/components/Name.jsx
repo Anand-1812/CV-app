@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Name() {
+function Name({ isActive }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -24,27 +24,29 @@ function Name() {
 
   return (
     <>
-      <div className="nameSection">
-        <h2>Personal Section</h2>
-        <div className="personalInfo">
-          <label>
-            First Name: <input value={firstName} onChange={handleFirstName} placeholder="first name" />
-          </label>
-          <label>
-            Last Name: <input value={lastName} onChange={handleLastName} placeholder="last name" />
-          </label>
+      {isActive && (
+        <div className="nameSection inputSection">
+          <h2>Personal Section</h2>
+          <div className="personalInfo">
+            <label>
+              First Name: <input value={firstName} onChange={handleFirstName} placeholder="first name" />
+            </label>
+            <label>
+              Last Name: <input value={lastName} onChange={handleLastName} placeholder="last name" />
+            </label>
+          </div>
+          <div className="personalInfo">
+            <label>
+              Email: <input value={email} onChange={handleEmail} placeholder="email" />
+            </label>
+          </div>
+          <div className="personalInfo">
+            <label>
+              Phone No: <input value={phone} onChange={handlePhone} placeholder="phone number" />
+            </label>
+          </div>
         </div>
-        <div className="personalInfo">
-          <label>
-            Email: <input value={email} onChange={handleEmail} placeholder="email" />
-          </label>
-        </div>
-        <div className="personalInfo">
-          <label>
-            Phone No: <input value={phone} onChange={handlePhone} placeholder="phone number" />
-          </label>
-        </div>
-      </div>
+      )}
     </>
   );
 }

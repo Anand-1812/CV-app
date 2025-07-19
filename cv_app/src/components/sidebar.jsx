@@ -9,9 +9,9 @@ function Sidebar() {
       <section className="aside">
         <p>Fill the details below</p>
         <Buttons />
-        <Name />
-        <Education />
-        <Experience />
+        <Name isActive={true} />
+        <Education isActive={false} />
+        <Experience isActive={false} />
       </section>
     </>
   );
