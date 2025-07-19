@@ -1,58 +1,35 @@
 import { useState } from "react";
 
-function Experience({isActive}) {
+function Experience({ isActive }) {
   const [year, setYear] = useState("");
   const [company, setCompanyName] = useState("");
   const [jobTitle, setJobTitle] = useState("");
   const [location, setLocation] = useState("");
 
-  function handleYear(e) {
-    setYear(e.target.value);
-  }
-
-  function handleCompanyName(e) {
-    setCompanyName(e.target.value);
-  }
-
-  function handleJobName(e) {
-    setJobTitle(e.target.value);
-  }
-
-  function handleLocation(e) {
-    setLocation(e.target.value);
-  }
-
   return (
-    <>       
-      <div className="experience inputSection">
+    <div className="inputSection">
+      <div className="inputBlock">
         <h2>Experience</h2>
-        <div className="year">
-          <label>
-            Year: <input value={year} onChange={handleYear} placeholder="2xxx-xx (format)" />
-          </label>
-        </div>
-
-        <div className="university">
-          <label>
-            Company: <input value={company} onChange={handleCompanyName} placeholder="company name" />
-          </label>
-        </div>
-
-        <div className="degree">
-          <label>
-            Job Title: <input value={jobTitle} onChange={handleJobName} placeholder="degree/major" />
-          </label>
-        </div>
-
-        <div className="location">
-          <label>
-            Location: <input value={location} onChange={handleLocation} placeholder="location" />
-          </label>
-        </div>
-
+        <label>
+          Year:
+          <input value={year} onChange={(e) => setYear(e.target.value)} placeholder="2xxx-xx (format)" />
+        </label>
+        <label>
+          Company:
+          <input value={company} onChange={(e) => setCompanyName(e.target.value)} placeholder="company name" />
+        </label>
+        <label>
+          Job Title:
+          <input value={jobTitle} onChange={(e) => setJobTitle(e.target.value)} placeholder="job title" />
+        </label>
+        <label>
+          Location:
+          <input value={location} onChange={(e) => setLocation(e.target.value)} placeholder="location" />
+        </label>
       </div>
-    </>
+    </div>
   );
 }
 
 export default Experience;
+

@@ -1,4 +1,3 @@
-import _default from "eslint-plugin-react-refresh";
 import { useState } from "react";
 
 function Education({ isActive }) {
@@ -7,53 +6,30 @@ function Education({ isActive }) {
   const [major, setMajor] = useState("");
   const [location, setLocation] = useState("");
 
-  function handleYear(e) {
-    setYear(e.target.value);
-  }
-
-  function handleUniversityName(e) {
-    setUniversityName(e.target.value);
-  }
-
-  function handleDegree(e) {
-    setMajor(e.target.value);
-  }
-
-  function handleLocation(e) {
-    setLocation(e.target.value);
-  }
-
   return (
-    <>
-        <div className="inputSection education">
-          <div><h2>Education Detials</h2></div>
-          <div className="education">
-            <label>
-              Year: <input value={year} onChange={handleYear} placeholder="2xxx-xx (format)" />
-            </label>
-          </div>
-
-          <div className="education">
-            <label>
-              Unversity/College: <input value={universityName} onChange={handleUniversityName} placeholder="university name" />
-            </label>
-          </div>
-
-          <div className="education">
-            <label>
-              Degree: <input value={major} onChange={handleDegree} placeholder="degree/major" />
-            </label>
-          </div>
-
-          <div className="education">
-            <label>
-              Location: <input value={location} onChange={handleLocation} placeholder="location" />
-            </label>
-          </div>
-
-        </div>
-    </>
+    <div className="inputSection">
+      <div className="inputBlock">
+        <h2>Education Details</h2>
+        <label>
+          Year:
+          <input value={year} onChange={(e) => setYear(e.target.value)} placeholder="2xxx-xx (format)" />
+        </label>
+        <label>
+          University/College:
+          <input value={universityName} onChange={(e) => setUniversityName(e.target.value)} placeholder="university name" />
+        </label>
+        <label>
+          Degree:
+          <input value={major} onChange={(e) => setMajor(e.target.value)} placeholder="degree/major" />
+        </label>
+        <label>
+          Location:
+          <input value={location} onChange={(e) => setLocation(e.target.value)} placeholder="location" />
+        </label>
+      </div>
+    </div>
   );
 }
 
 export default Education;
+

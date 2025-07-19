@@ -6,47 +6,30 @@ function Name({ isActive }) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  function handleFirstName(e) {
-    setFirstName(e.target.value);
-  }
-
-  function handleLastName(e) {
-    setLastName(e.target.value);
-  }
-
-  function handleEmail(e) {
-    setEmail(e.target.value);
-  }
-
-  function handlePhone(e) {
-    setPhone(e.target.value);
-  }
-
   return (
-    <>
-      <div className="nameSection inputSection">
-        <div><h2>Personal Details</h2></div>
-        <div className="personalInfo">
-          <label>
-            First Name: <input value={firstName} onChange={handleFirstName} placeholder="first name" />
-          </label>
-          <label>
-            Last Name: <input value={lastName} onChange={handleLastName} placeholder="last name" />
-          </label>
-        </div>
-        <div className="personalInfo">
-          <label>
-            Email: <input value={email} onChange={handleEmail} placeholder="email" />
-          </label>
-        </div>
-        <div className="personalInfo">
-          <label>
-            Phone No: <input value={phone} onChange={handlePhone} placeholder="phone number" />
-          </label>
-        </div>
+    <div className="inputSection">
+      <div className="inputBlock">
+        <h2>Personal Details</h2>
+        <label>
+          First Name:
+          <input value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder="first name" />
+        </label>
+        <label>
+          Last Name:
+          <input value={lastName} onChange={(e) => setLastName(e.target.value)} placeholder="last name" />
+        </label>
+        <label>
+          Email:
+          <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" />
+        </label>
+        <label>
+          Phone No:
+          <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="phone number" />
+        </label>
       </div>
-    </>
+    </div>
   );
 }
 
 export default Name;
+
