@@ -25,13 +25,21 @@ function App() {
     location: "",
   });
 
-
-
-
   return (
     <>
-      <Sidebar />
-      <CvSection />
+      <Sidebar
+        personalDetails={personalDetails}
+        setPersonalDetails={setPersonalDetails}
+        educationDetails={educationDetails}
+        setEducationDetails={setEducationDetails}
+        experienceDetails={experienceDetails}
+        setExperienceDetails={setExperienceDetails}
+      />
+      <CvSection
+        personalDetails={personalDetails}
+        educationDetails={educationDetails}
+        experienceDetails={experienceDetails}
+      />
     </>
   )
 }
