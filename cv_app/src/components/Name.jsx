@@ -12,12 +12,8 @@ function Name({ personalDetails, setPersonalDetails }) {
       <div className="inputBlock">
         <h2>Personal Details</h2>
         <label>
-          First Name:
-          <input name="firstName" value={personalDetails.firstName} onChange={handleChange} placeholder="first name" />
-        </label>
-        <label>
-          Last Name:
-          <input name="lastName" value={personalDetails.lastName} onChange={handleChange} placeholder="last name" />
+          Full Name:
+          <input name="fullName" value={personalDetails.fullName} onChange={handleChange} placeholder="Name" />
         </label>
         <label>
           Email:
@@ -26,6 +22,10 @@ function Name({ personalDetails, setPersonalDetails }) {
         <label>
           Phone No:
           <input name="phone" value={personalDetails.phone} onChange={handleChange} placeholder="phone number" />
+        </label>
+        <label>
+          Location:
+          <input name="location" value={personalDetails.location} onChange={handleChange} placeholder="location" />
         </label>
       </div>
     </div>

@@ -4,10 +4,11 @@ export default function CvSection({ personalDetails, educationDetails, experienc
       <section className="cv-section">
         <div className="cv">
           <div className="top">
-            <h1>{personalDetails.firstName + ' ' + personalDetails.lastName}</h1><br />
+            <h1>{personalDetails.fullName}</h1>
             <div className="userDetail">
               <p>{personalDetails.email}</p>
               <p>{personalDetails.phone}</p>
+              <p>{personalDetails.location}</p>
             </div>
           </div>
         </div>
