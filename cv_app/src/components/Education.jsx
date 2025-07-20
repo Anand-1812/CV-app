@@ -17,7 +17,7 @@ function Education({ educationDetails, setEducationDetails }) {
         </label>
         <label>
           University/College:
-          <input name="university" value={educationDetails.universit} onChange={handleChange} placeholder="university name" />
+          <input name="university" value={educationDetails.university} onChange={handleChange} placeholder="university name" />
         </label>
         <label>
           Degree:
