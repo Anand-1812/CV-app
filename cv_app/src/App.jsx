@@ -6,10 +6,10 @@ import CvSection from './components/CvSection.jsx'
 function App() {
 
   const [personalDetails, setPersonalDetails] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     phone: "",
+    locatoin: "",
   });
 
   const [educationDetails, setEducationDetails] = useState({
