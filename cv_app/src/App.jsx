@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css'
 import Sidebar from './components/sidebar.jsx'
 import CvSection from './components/CvSection.jsx'
