@@ -160,13 +160,6 @@ input:hover {
   font-size: 1.4rem;
 }
 
-.workExp::after {
-  content: "";
-  flex-grow: 1;
-  margin-top: 1.2rem;
-  margin-left: 0.4rem;
-}
-
 /* Education & Experience Section Styles */
 
 .experience,
@@ -209,7 +202,7 @@ input:hover {
   color: var(--button-hover-bg);
 }
 
-/* Responsive Adjustments if needed */
+/* Responsive  */
 @media (max-width: 768px) {
   .cv-section {
     padding: 2rem;
