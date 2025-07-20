@@ -1,10 +1,11 @@
-import { useState } from "react";
+function Experience({ experienceDetails, setExperienceDetails }) {
 
-function Experience({ isActive }) {
-  const [year, setYear] = useState("");
-  const [company, setCompanyName] = useState("");
-  const [jobTitle, setJobTitle] = useState("");
-  const [location, setLocation] = useState("");
+  function handleChange(e) {
+    setExperienceDetails({
+      ...experienceDetails,
+      [e.target.name]: e.target.value,
+    })
+  }
 
   return (
     <div className="inputSection">
@@ -12,19 +13,19 @@ function Experience({ isActive }) {
         <h2>Experience</h2>
         <label>
           Year:
-          <input value={year} onChange={(e) => setYear(e.target.value)} placeholder="2xxx-xx (format)" />
+          <input name="year" value={experienceDetails.year} onChange={handleChange} placeholder="2xxx-xx (format)" />
         </label>
         <label>
           Company:
-          <input value={company} onChange={(e) => setCompanyName(e.target.value)} placeholder="company name" />
+          <input name="company" value={experienceDetails.company} onChange={handleChange} placeholder="company name" />
         </label>
         <label>
           Job Title:
-          <input value={jobTitle} onChange={(e) => setJobTitle(e.target.value)} placeholder="job title" />
+          <input name="title" value={experienceDetails.title} onChange={handleChange} placeholder="job title" />
         </label>
         <label>
           Location:
-          <input value={location} onChange={(e) => setLocation(e.target.value)} placeholder="location" />
+          <input name="location" value={experienceDetails.location} onChange={handleChange} placeholder="location" />
         </label>
       </div>
     </div>
