@@ -155,4 +155,71 @@ input:hover {
   width: 8px;
 }
 
+.experience {
+  display: flex;
+  font-size: 1.4rem;
+}
 
+.workExp::after {
+  content: "";
+  flex-grow: 1;
+  margin-top: 1.2rem;
+  margin-left: 0.4rem;
+}
+
+/* Education & Experience Section Styles */
+
+.experience,
+.education {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.experience h2,
+.education h2 {
+  font-size: 1.8rem;
+  color: var(--border-color);
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.experience h2::after,
+.education h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--button-hover-bg);
+}
+
+.experience p,
+.education p {
+  margin: 0;
+  color: #2e3440;
+}
+
+.experience p strong,
+.education p strong {
+  color: var(--button-hover-bg);
+}
+
+/* Responsive Adjustments if needed */
+@media (max-width: 768px) {
+  .cv-section {
+    padding: 2rem;
+  }
+
+  .cv {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
